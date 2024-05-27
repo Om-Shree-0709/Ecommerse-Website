@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_login.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="Img/Logo/logo.png" class="logo" alt="LOGO" /></a>
+      <input type="text" placeholder="Search.." />
+      <div>
+        <ul id="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="register.html" class="active">Register</a></li>
+          <li><a href="signup.html">Sign Up</a></li>
+          <!-- Link to Signup Page -->
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="login">
+      <div class="login-container">
+        <h2>Login</h2>
+        <form action="register.php" method="post">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit" name="login">Login</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="script_login.js"></script>
+  </body>
+</html>

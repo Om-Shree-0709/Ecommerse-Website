@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_login.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="Img/Logo/logo.png" class="logo" alt="LOGO" /></a>
+      <input type="text" placeholder="Search.." />
+      <div>
+        <ul id="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Log-In</a></li>
+          <!-- Link to Login Page -->
+          <li><a href="register.html" class="active">Register</a></li>
+          <!-- Active on Signup Page -->
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="signup">
+      <div class="signup-container">
+        <h2>Sign Up</h2>
+        <form action="register.php" method="post">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit" name="register">Sign Up</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="script_signup.js"></script>
+  </body>
+</html>
